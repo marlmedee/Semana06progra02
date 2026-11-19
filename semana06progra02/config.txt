@@ -1,0 +1,8 @@
+texto=leelo
+hasta=
+extension=
+min=
+desde=
+ruta=C:\Users\marlo\Downloads\carpetaspr
+max=
+profundidad=0

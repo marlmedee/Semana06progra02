@@ -1,0 +1,29 @@
+EXPLORADOR, ANALIZADOR Y GESTOR DE ARCHIVOS - Semana 06 Programacion II
+
+Paquetes:
+  semana06progra02.modelo       -> logica (no usa javax.swing)
+  semana06progra02.vista        -> VentanaPrincipal (Swing)
+  semana06progra02.controlador  -> Controlador (une vista y modelo)
+
+Excepciones propias: RutaInvalidaException y DatosInvalidosException.
+
+Decisiones tomadas:
+- Archivos ocultos: se incluyen en el arbol, estadisticas, busqueda y duplicados
+  igual que cualquier otro archivo.
+- Archivos sin extension: cuentan en la categoria "otros". Un archivo como
+  ".gitignore" (punto al inicio) se toma como archivo sin extension.
+- Enlaces simbolicos: se guarda la ruta canonica de cada carpeta visitada, si se
+  vuelve a llegar a la misma carpeta no se entra otra vez (asi no hay bucles).
+  Al eliminar una carpeta, si adentro hay un enlace se borra solo el enlace.
+- Carpetas sin permiso (listFiles() = null): se saltan y se anota en bitacora.log.
+- Profundidad: la raiz es nivel 0. Con profundidad 1 solo se ve el contenido de
+  la raiz, con 2 se entra un nivel mas, etc. 0 = sin limite.
+- Duplicados: mismo nombre (sin importar mayusculas) y mismo tamaño.
+- El porcentaje de las estadisticas es sobre la cantidad total de archivos.
+- El editor solo abre archivos de texto (por extension: txt, java, csv, log,
+  xml, html, md, json, etc.) de maximo 1 MB.
+- Fechas de los filtros en formato dd/MM/yyyy. Tamaños en KB.
+
+Archivos que crea el programa (en la carpeta del proyecto):
+  bitacora.log  -> historial de acciones (modo append)
+  config.txt    -> ultima ruta y filtros usados

@@ -1,0 +1,9 @@
+2026-11-19 07:46:45 | CREAR CARPETA | C:\Users\marlo\Downloads\carpetaspr\pepe
+2026-11-19 07:47:05 | ANALIZAR | C:\Users\marlo\Downloads\carpetaspr
+2026-11-19 07:48:06 | ELIMINAR | C:\Users\marlo\Downloads\carpetaspr\unapalabra.docx
+2026-11-19 07:48:39 | MOVER | C:\Users\marlo\Downloads\carpetaspr\leelo.txt -> C:\Users\marlo\Downloads\carpetaspr\pepe\leelo.txt
+2026-11-19 07:49:20 | CREAR ARCHIVO | C:\Users\marlo\Downloads\carpetaspr\papa.docx
+2026-11-19 07:49:49 | CREAR ARCHIVO | C:\Users\marlo\Downloads\carpetaspr\tete.txt
+2026-11-19 07:49:54 | ABRIR | C:\Users\marlo\Downloads\carpetaspr\tete.txt
+2026-11-19 07:50:26 | GUARDAR | C:\Users\marlo\Downloads\carpetaspr\tete.txt
+2026-11-19 07:51:04 | BUSCAR "leelo" | C:\Users\marlo\Downloads\carpetaspr
